@@ -1,0 +1,33 @@
+{
+  "name": "integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js",
+    "postinstall": "link-module-alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhakamada/node-cucumber.git"
+  },
+  "author": "Diego Hakamada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhakamada/node-cucumber/issues"
+  },
+  "homepage": "https://github.com/dhakamada/node-cucumber#readme",
+  "dependencies": {
+    "cucumber": "^6.0.2",
+    "dotenv": "^8.1.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0"
+  },
+  "_moduleAliases": {
+    "~root": ".",
+    "lib": "src/lib",
+    "config": "src/configs"
+  }
+}
